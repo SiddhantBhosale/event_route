@@ -1,0 +1,7 @@
+event_routing.content:
+  path: '/restricted'
+  defaults:
+    _controller: 'Drupal\event_request\Controller\MyController::content'
+    _title: 'Restricted content'
+  requirements:
+    _permission: 'access content'
